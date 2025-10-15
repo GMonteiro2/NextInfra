@@ -169,23 +169,26 @@ section {
     background-color: var(--light);
 }
 
-/* Carrossel Otimizado */
+/* Carrossel Responsivo Corrigido */
 .carousel-container {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .carousel-wrapper {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .services-carousel {
     display: flex;
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    height: 400px;
+    height: auto;
+    min-height: 400px;
 }
 
 .service-card {
@@ -199,6 +202,8 @@ section {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .service-card.active {
@@ -230,6 +235,7 @@ section {
     line-height: 1.7;
     max-width: 600px;
     color: #666;
+    width: 100%;
 }
 
 .carousel-controls {
@@ -240,8 +246,10 @@ section {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
     pointer-events: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-btn {
@@ -275,6 +283,7 @@ section {
     justify-content: center;
     margin-top: 30px;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .carousel-dot {
@@ -403,41 +412,168 @@ footer {
     }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
+/* RESPONSIVIDADE CORRIGIDA */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
     }
     
     .service-card {
-        padding: 30px 20px;
-        height: 350px;
+        padding: 40px 30px;
+    }
+    
+    .service-icon {
+        font-size: 3.5rem;
+    }
+    
+    .service-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 80px 0;
+    }
+    
+    .logo {
+        font-size: 2.8rem;
+    }
+    
+    .tagline {
+        font-size: 1.3rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .service-card {
+        padding: 35px 25px;
+        min-height: 350px;
     }
     
     .service-icon {
         font-size: 3rem;
+        margin-bottom: 20px;
     }
     
     .service-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .service-card p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
     
     .carousel-btn {
         width: 50px;
         height: 50px;
+        font-size: 1rem;
+    }
+    
+    .carousel-controls {
+        padding: 0 5px;
     }
     
     .header-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    header {
+        padding: 60px 0;
     }
     
     .logo {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .tagline {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .header-description {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+        min-height: 380px;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .carousel-dots {
+        margin-top: 25px;
+        gap: 8px;
+    }
+    
+    .carousel-dot {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .contact-item {
+        font-size: 1rem;
+    }
+    
+    .qr-code img {
+        max-width: 130px;
+    }
+    
+    .whatsapp-link {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
     
     .whatsapp-float {
@@ -447,24 +583,40 @@ footer {
         right: 20px;
         font-size: 25px;
     }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .service-card {
-        height: 400px;
         padding: 25px 15px;
+        min-height: 400px;
     }
     
     .service-icon {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .service-title {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
     }
     
     .carousel-btn {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo {
+        font-size: 2rem;
     }
 }
