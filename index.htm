@@ -3,87 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextInfo Tech - Soluções em Tecnologia</title>
+    <title>NextInfo Tech - Soluções em Tecnologia de Ponta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="header-overlay"></div>
+        <div class="header-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
         <div class="container">
-            <div class="logo">NextInfo Tech</div>
-            <div class="tagline">SOLUÇÕES EM TECNOLOGIA PARA VOCÊ</div>
-            <p class="header-description">Serviços técnicos especializados com qualidade e garantia</p>
+            <h1 class="logo">Next<span>Info</span> Tech</h1>
+            <p class="tagline">SOLUÇÕES EM TECNOLOGIA PARA VOCÊ</p>
+            <p class="header-description">Serviços técnicos especializados com excelência, qualidade e garantia</p>
             <div class="header-buttons">
-                <a href="#services" class="btn">Nossos Serviços</a>
-                <a href="#contact" class="btn btn-outline">Fale Conosco</a>
+                <a href="#services" class="btn">
+                    <i class="fas fa-laptop-code"></i>
+                    Nossos Serviços
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-phone-alt"></i>
+                    Fale Conosco
+                </a>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
     
+    <!-- Sobre -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Ola, me chamo Gabriel! Sou formado em Técnico de Redes pelo SENAI e atualmente estou no terceiro período de Ciência da Computação. Como ainda não consegui um estágio na área, decidi oferecer meus serviços para gerar uma renda enquanto continuo meus estudos.</p>
+                    <p>Olá, me chamo Gabriel! Sou formado em Técnico de Redes pelo SENAI e atualmente estou no terceiro período de Ciência da Computação. Como ainda não consegui um estágio na área, decidi oferecer meus serviços para gerar uma renda enquanto continuo meus estudos.</p>
                     <p>Esta iniciativa me permite ajudar pessoas com soluções tecnológicas, ao mesmo tempo em que arrecado recursos para investir na minha vida acadêmica e no meu crescimento profissional.</p>
                     <p>Acredito que o conhecimento deve ser compartilhado, e estou entusiasmado em poder aplicar o que aprendi para resolver problemas reais e facilitar o dia a dia das pessoas com a tecnologia.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Serviços Prestados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tecnologia e Programação">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tecnologia e Programação">
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- Serviços -->
     <section class="services" id="services">
+        <div class="services-bg"></div>
         <div class="container">
             <h2 class="section-title">Serviços Oferecidos</h2>
             
             <div class="carousel-container">
                 <div class="carousel-wrapper">
                     <div class="services-carousel">
-                        <div class="service-card active">
+                        <div class="service-card">
                             <div class="service-icon">💻</div>
                             <h3 class="service-title">Formatação e Otimização</h3>
-                            <p>Deixe seu computador rápido e funcionando como novo com nossa formatação profissional e otimização completa.</p>
+                            <p>Deixe seu computador rápido e funcionando como novo com nossa formatação profissional e otimização completa. Remoção de vírus, instalação de drivers e configuração de sistema.</p>
                         </div>
                         
                         <div class="service-card">
                             <div class="service-icon">📱</div>
                             <h3 class="service-title">Formatação de Celulares</h3>
-                            <p>Problemas com seu smartphone? Realizamos formatação e reinstalação do sistema operacional.</p>
+                            <p>Problemas com seu smartphone? Realizamos formatação e reinstalação do sistema operacional. Recuperação de dados e otimização de performance.</p>
                         </div>
                         
                         <div class="service-card">
                             <div class="service-icon">⚙️</div>
                             <h3 class="service-title">Instalação de Programas</h3>
-                            <p>Instalação de Pacote Office, antivírus, editores e outros softwares essenciais para seu dia a dia.</p>
+                            <p>Instalação de Pacote Office, antivírus, editores, navegadores e outros softwares essenciais para seu dia a dia. Configuração personalizada conforme suas necessidades.</p>
                         </div>
                         
                         <div class="service-card">
                             <div class="service-icon">☁️</div>
                             <h3 class="service-title">Configuração de Backup</h3>
-                            <p>Proteja seus dados importantes com configuração de backup em nuvem ou mídia externa.</p>
+                            <p>Proteja seus dados importantes com configuração de backup em nuvem ou mídia externa. Implementamos soluções automáticas para garantir a segurança dos seus arquivos.</p>
                         </div>
                         
                         <div class="service-card">
                             <div class="service-icon">📶</div>
-                            <h3 class="service-title">Trocas de HDs e SSDs</h3>
-                            <p>Atualize seu computador com unidades de armazenamento mais rápidas e com maior capacidade.</p>
+                            <h3 class="service-title">Trocas de Peças de PC</h3>
+                            <p>Troco peças do seu PC e também efetuo limpezas!.</p>
                         </div>
                         
                         <div class="service-card">
                             <div class="service-icon">🔌</div>
                             <h3 class="service-title">Venda de Acessórios</h3>
-                            <p>Carregadores, películas protetoras, capas e outros acessórios para seus dispositivos.</p>
+                            <p>Carregadores originais, películas protetoras de alta qualidade, capas personalizadas e outros acessórios para seus dispositivos. Produtos com garantia.</p>
                         </div>
 
                         <div class="service-card">
                             <div class="service-icon">🌐</div>
                             <h3 class="service-title">Criação de Sites</h3>
-                            <p>Desenvolvimento de sites profissionais, responsivos e otimizados para sua empresa ou projeto pessoal.</p>
+                            <p>Desenvolvimento de sites profissionais, responsivos e otimizados para sua empresa ou projeto pessoal. Designs modernos e performance excepcional.</p>
                         </div>
                     </div>
                 </div>
@@ -104,6 +138,7 @@
         </div>
     </section>
     
+    <!-- Contato -->
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Conecte-se Conosco</h2>
@@ -136,9 +171,26 @@
         </div>
     </section>
     
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 NextInfo Tech - Todos os direitos reservados</p>
+            <div class="footer-content">
+                <div class="footer-logo">Next<span>Info</span> Tech</div>
+                <p class="footer-text">Soluções em tecnologia com excelência e compromisso. Sua satisfação é nossa prioridade.</p>
+                
+                <div class="social-links">
+                  <!--  <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a> -->
+                    <a href="#" class="https://www.linkedin.com/in/gabriel-monteiro-a074292b5/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2023 NextInfo Tech - Todos os direitos reservados
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -149,5 +201,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
